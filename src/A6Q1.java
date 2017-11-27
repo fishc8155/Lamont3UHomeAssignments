@@ -24,31 +24,31 @@ public class A6Q1 {
         System.out.println("How many students are in the class?");
         
         
-        int numberOfStudents = in.nextInt();
+        int students = in.nextInt();
         
         //ask user to enter all of the marks in the class
         System.out.println("Please enter the marks");
         
         //store amrks
-        double[] classMarks = new double[numberOfStudents];
+        double[] marks = new double[students];
         
         //make a loop
-        for(int i = 0; i < numberOfStudents; i++){ 
-            classMarks[i] = in.nextInt();
+        for(int i = 0; i < students; i++){ 
+            marks[i] = in.nextInt();
         }
         
         //find average
         System.out.print("The average is ");
-        System.out.printf("%.2f", average(numberOfStudents, classMarks));
+        System.out.printf("%.2f", average(students, marks));
         System.out.print("%");
 
 
-    } public static double average(int numberOfStudents, double[] classMarks){
+    } public static double average(int students, double[] marks){
         double sumOfArray = 0;
-        for (int i = 0; i < numberOfStudents; i++) { 
-            sumOfArray = sumOfArray + classMarks[i]; 
+        for (int i = 0; i < students; i++) { 
+            sumOfArray = sumOfArray + marks[i]; 
         }
-        double average = sumOfArray / numberOfStudents; 
+        double average = sumOfArray / students; 
         
         return average;
     }

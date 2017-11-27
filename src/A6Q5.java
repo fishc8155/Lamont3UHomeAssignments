@@ -25,19 +25,19 @@ public class A6Q5 {
 
         //ask how many students are in the class
         System.out.println("How many students are in the class?");
-        int numberOfStudents = in.nextInt();
+        int students = in.nextInt();
         //create an array
-        int[] marks = new int[numberOfStudents];
+        int[] marks = new int[students];
 
         //ask user for 10 marks
-        System.out.println("Please enter " + numberOfStudents + " marks");
+        System.out.println("Please enter " + students + " marks");
         //get the marks
-        for (int a = 0; a < numberOfStudents; a++) { 
+        for (int a = 0; a < students; a++) { 
             marks[a] = in.nextInt(); 
         }
 
-        for (int x = 0; x < numberOfStudents; x++) { 
-            for (int i = 0; i < numberOfStudents - 1; i++) { 
+        for (int x = 0; x < students; x++) { 
+            for (int i = 0; i < students - 1; i++) { 
                 if (marks[x] < marks[i]) { 
                     int temp = marks[i]; 
                     marks[i] = marks[x]; 
@@ -46,12 +46,12 @@ public class A6Q5 {
                 }
             }
         }
-        ascending(marks, numberOfStudents); 
-        if ((numberOfStudents / 2) % 2 == 1) { 
-            median = marks[numberOfStudents / 2]; 
+        ascending(marks, students); 
+        if ((students / 2) % 2 == 1) { 
+            median = marks[students / 2]; 
         } else { //otherwise
-            int middle1 = marks[(numberOfStudents + 1) / 2]; 
-            int middle2 = marks[(numberOfStudents - 1) / 2]; 
+            int middle1 = marks[(students + 1) / 2]; 
+            int middle2 = marks[(students - 1) / 2]; 
             median = (middle1 + middle2) / 2; 
         }
         System.out.println("");

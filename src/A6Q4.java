@@ -41,7 +41,9 @@ public class A6Q4 {
                     
                 }
             }
-        }
+        }  
+        
+        
         ascending(marks); 
     }
     public static void ascending(int[] marks){

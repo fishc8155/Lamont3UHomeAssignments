@@ -45,6 +45,8 @@ public class A6Q6 {
                 }
             }
         }
+          
+        
         
         //make average variable
         int average = 0; 

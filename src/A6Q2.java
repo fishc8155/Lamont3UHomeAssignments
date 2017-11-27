@@ -21,31 +21,31 @@ public class A6Q2 {
 
         //ask how many students are in the class
         System.out.println("How many students are there?");
-        int numberOfStudents = in.nextInt();
+        int students = in.nextInt();
 
         //enter heights in cm
         System.out.println("Please enter all of the heights in centimeters");
 
         //store heights
-        double[] classHeights = new double[numberOfStudents];
+        double[] heights = new double[students];
 
         //make a loop
-        for (int i = 0; i < numberOfStudents; i++) {
-            classHeights[i] = in.nextInt(); 
+        for (int i = 0; i < students; i++) {
+            heights[i] = in.nextInt(); 
         }
         
         double sumOfArray = 0;
-        for (int count = 0; count < numberOfStudents; count++) { 
-            sumOfArray = sumOfArray + classHeights[count]; 
+        for (int count = 0; count < students; count++) { 
+            sumOfArray = sumOfArray + heights[count]; 
         }
         //get average
-        double average = sumOfArray / numberOfStudents; 
+        double average = sumOfArray / students; 
         
         // output all above average heights
         System.out.printf("These are the heights that are above average "); 
-        for(int x = 0; x < numberOfStudents; x++){ 
-            if (classHeights[x] >= average){ 
-                System.out.printf("%.0f", classHeights[x]); 
+        for(int x = 0; x < students; x++){ 
+            if (heights[x] >= average){ 
+                System.out.printf("%.0f", heights[x]); 
                 System.out.print("cm, "); 
             }
         }
